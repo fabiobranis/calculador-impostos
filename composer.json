@@ -1,0 +1,26 @@
+{
+  "name": "branissoft/calculador-impostos",
+  "description": "Calculador de Impostos - Biblioteca para calcular os impostos brasileiros",
+  "keywords": ["impostos", "Brasil"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fabio Branis",
+      "email": "fabiobranis@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BranisSoft\\CalculadorImpostos\\": "src"
+    }
+  },
+  "scripts": {
+    "test": [
+      "@composer install",
+      "phpunit"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  }
+}
