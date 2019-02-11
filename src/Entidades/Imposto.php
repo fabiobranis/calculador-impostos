@@ -10,7 +10,7 @@ namespace BranisSoft\CalculadorImpostos\Entidades;
 
 
 /**
- * Class Imposto
+ * Class ImpostoConcreto
  * @package BranisSoft\CalculadorImpostos\Entidades
  */
 abstract class Imposto
@@ -46,7 +46,7 @@ abstract class Imposto
     protected $total = 0;
 
     /**
-     * Imposto constructor.
+     * ImpostoConcreto constructor.
      * @param float $valorMercadoria
      * @param float $aliquota
      * @param string|null $cst

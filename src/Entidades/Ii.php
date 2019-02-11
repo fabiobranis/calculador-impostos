@@ -3,17 +3,17 @@
  * Created by PhpStorm.
  * User: fabio
  * Date: 01/02/19
- * Time: 10:16
+ * Time: 14:23
  */
 
 namespace BranisSoft\CalculadorImpostos\Entidades;
 
 
 /**
- * Class Ipi
- * @package BranisSoft\CalculadorImpostos\Entidades
+ * Class Ii
+ * @package BranisSoft\CalculadorImpostos\Entidades,
  */
-class Ipi extends Imposto
+class Ii extends Imposto
 {
 
     /**
@@ -21,11 +21,10 @@ class Ipi extends Imposto
      */
     public function calcular(): Imposto
     {
-        if (substr($this->cst, 0, 2) == "50") {
+        if ($this->aliquota > 0){
             $this->baseCalculo = $this->valorMercadoria;
             $this->total = $this->baseCalculo * ($this->aliquota / 100);
         }
         return $this;
     }
-
 }
